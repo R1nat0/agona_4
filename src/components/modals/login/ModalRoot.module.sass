@@ -1,0 +1,115 @@
+@use 'src/styles/variables'
+
+.overlay
+    background-color: variables.$gray-60
+    position: fixed
+    display: flex
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    justify-content: center
+    align-items: center
+    z-index: 10
+
+.window
+    width: 452px
+    border-radius: 24px
+    padding: 48px
+    background-color: white
+
+    .container
+        display: flex
+        flex-direction: column
+        width: 352px
+        gap: 32px
+
+        .head
+            display: flex
+            justify-content: space-between
+
+            h1
+                font-size: 28px
+                font-weight: 600
+                line-height: 32px
+
+            .cross
+                border: none
+                background: none
+                cursor: pointer
+
+        .forms
+            margin-top: 16px
+            display: flex
+            gap: 24px
+            flex-direction: column
+            justify-content: space-between
+
+            .validate
+                color: rgba(201, 13, 13, 0.9)
+                margin-top: 3px
+
+            span
+                font-size: 14px
+                opacity: 0.64
+                width: 320px
+                height: 40px
+                line-height: 20px
+
+                p
+                    font-size: 14px
+                    color: variables.$green
+
+            input
+                width: 352px
+                height: 60px
+                background: #fff
+                border: 1px solid variables.$navy-16
+                border-radius: 8px
+                font-family: Inter
+                font-size: 14px
+                padding: 20px 16px
+
+        .enters
+            height: 92px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+            .big
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 10px
+                height: 56px
+                background: variables.$green
+                color: white
+                border-radius: 8px
+                font-size: 16px
+                cursor: pointer
+                border: none
+
+            .smalls
+                display: flex
+                justify-content: space-between
+
+            .buttons
+                color: variables.$green
+                font-size: 16px
+                cursor: pointer
+
+        .partners
+            background: variables.$lightnavy-8
+            color: variables.$navy-80
+            border-radius: 8px
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            border: none
+            height: 56px
+            font-size: 16px
+            cursor: pointer
+
+.Cross
+    color: variables.$navy-72

@@ -1,0 +1,30 @@
+@use 'src/styles/variables'
+
+.container
+    @include variables.flex
+
+    label
+        @include variables.flex
+
+    .caption
+        font-style: normal
+        font-size: 14px
+        line-height: 20px
+
+.checkbox
+    background: white
+    border: 1.5px solid variables.$navy-40
+    border-radius: 4px
+    margin-right: 9px
+    height: 18px
+    width: 18px
+
+    &Active
+        padding: 4px
+        background: variables.$green
+        border: none
+
+input[type="checkbox"]
+    height: 1px
+    width: 1px
+    position: absolute
